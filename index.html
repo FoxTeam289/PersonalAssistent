@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MindCare - ваш персональный ассистент по ментальному здоровью и благополучию. Отслеживайте настроение, активность, качество сна и уровень стресса, и получайте персонализированные рекомендации для улучшения вашего ментального здоровья.">
+    <meta name="keywords" content="ментальное здоровье, отслеживание настроения, рекомендации по здоровью, MindCare, здоровье, благополучие, советы по здоровью, улучшение настроения, стресс, сон, активность">
+    <meta name="author" content="MindCare Team">
+    <title>MindCare - Ваш персональный ассистент по ментальному здоровью</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img.jpg" type="image/jpg">
+    <meta property="og:title" content="MindCare - Ваш персональный ассистент по ментальному здоровью">
+    <meta property="og:description" content="MindCare помогает отслеживать настроение, активность, качество сна и уровень стресса, предоставляя персонализированные рекомендации для улучшения вашего ментального здоровья.">
+    <meta property="og:image" content="https://foxteam289.github.io/PersonalAssistent/img.jpg">
+    <meta property="og:url" content="https://foxteam289.github.io/PersonalAssistent/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MindCare - Ваш персональный ассистент по ментальному здоровью">
+    <meta name="twitter:description" content="MindCare помогает отслеживать настроение, активность, качество сна и уровень стресса, предоставляя персонализированные рекомендации для улучшения вашего ментального здоровья.">
+    <meta name="twitter:image" content="https://foxteam289.github.io/PersonalAssistent/img.jpg">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img.jpg" alt="Логотип MindCare" class="logo">
+            <h1>MindCare</h1>
+        </header>
+        <main>
+            <section id="user-profile">
+                <h2>Профиль Пользователя</h2>
+                <form id="profileForm">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="age">Возраст:</label>
+                    <input type="number" id="age" name="age">
+                    <label for="interests">Интересы:</label>
+                    <input type="text" id="interests" name="interests">
+                    <button type="submit">Сохранить</button>
+                </form>
+            </section>
+            <section id="mood-tracker">
+                <h2>Отслеживание Настроения</h2>
+                <form id="moodForm">
+                    <label for="mood">Ваше настроение:</label>
+                    <select id="mood" name="mood">
+                        <option value="happy">Счастлив</option>
+                        <option value="sad">Грустно</option>
+                        <option value="stressed">Стресс</option>
+                        <option value="calm">Спокойно</option>
+                    </select>
+                    <label for="activity-level">Уровень активности:</label>
+                    <select id="activity-level" name="activity-level">
+                        <option value="high">Высокий</option>
+                        <option value="medium">Средний</option>
+                        <option value="low">Низкий</option>
+                    </select>
+                    <label for="sleep-quality">Качество сна:</label>
+                    <select id="sleep-quality" name="sleep-quality">
+                        <option value="good">Хорошее</option>
+                        <option value="average">Среднее</option>
+                        <option value="poor">Плохое</option>
+                    </select>
+                    <label for="stress-level">Уровень стресса:</label>
+                    <select id="stress-level" name="stress-level">
+                        <option value="low">Низкий</option>
+                        <option value="medium">Средний</option>
+                        <option value="high">Высокий</option>
+                    </select>
+                    <button type="submit">Отправить</button>
+                </form>
+                <div id="moodHistory"></div>
+            </section>
+            <section id="exercise-recommendations">
+                <h2>Рекомендации по Упражнениям</h2>
+                <div id="recommendations"></div>
+            </section>
+            <section id="nutrition-sleep-tips">
+                <h2>Советы по Питанию и Сну</h2>
+                <div id="tips">
+                    <p>Поддерживайте балансированное питание и следите за качеством сна для улучшения ментального здоровья.</p>
+                </div>
+            </section>
+            <section id="community-support">
+                <h2>Сообщество и Поддержка</h2>
+                <div id="chat">
+                    <div id="messages"></div>
+                    <form id="chatForm">
+                        <input type="text" id="message" name="message" placeholder="Введите сообщение">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+            <section id="gratitude-journal">
+                <h2>Дневник благодарностей</h2>
+                <form id="gratitudeForm">
+                    <label for="gratitude">За что вы благодарны сегодня?</label>
+                    <textarea id="gratitude" name="gratitude" rows="4"></textarea>
+                    <button type="submit">Сохранить</button>
+                </form>
+                <div id="gratitudeHistory"></div>
+            </section>
+            
+            <section id="goals">
+                <h2>Цели и достижения</h2>
+                <form id="goalForm">
+                    <label for="goal">Новая цель:</label>
+                    <input type="text" id="goal" name="goal">
+                    <button type="submit">Добавить</button>
+                </form>
+                <div id="goalList"></div>
+            </section>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
